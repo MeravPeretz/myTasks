@@ -1,12 +1,15 @@
-using myTasks.Models;
 using Task = myTasks.Models.Task;
+using myTasks.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+
+
 namespace myTasks.Services;
 
-public static class TasksService
+public class TasksService: ITasksService
 {
-    private static List<Task> tasks;
+    private  List<Task> tasks;
 
-    static TasksService()
+    public TasksService()
     {
         tasks = new List<Task>
         {
@@ -15,14 +18,14 @@ public static class TasksService
         };
     }
 
-    public static List<Task>GetAll() => tasks;
+    public  List<Task> GetAll(){return tasks;}
 
-    public static Task GetById(int id) 
+    public  Task GetById(int id) 
     {
         return tasks.FirstOrDefault(t => t.Id == id);
     }
 
-    public static int Add(Task newTask)
+    public  int Add(Task newTask)
     {
         if (tasks.Count == 0)
         {
@@ -38,7 +41,7 @@ public static class TasksService
         return newTask.Id;
     }
   
-    public static bool Update(int id, Task newTask)
+    public  bool Update(int id, Task newTask)
     {
         if (id != newTask.Id)
             return false;
@@ -57,7 +60,7 @@ public static class TasksService
     }  
 
       
-    public static bool Delete(int id)
+    public  bool Delete(int id)
     {
         var existingTask= GetById(id);
         if (existingTask== null )
@@ -73,4 +76,12 @@ public static class TasksService
 
 
 
+}
+
+public static class TasksUtils
+{
+    public static void AddTask(this IServiceCollection services)
+    {
+        services.AddSingleton<ITasksService, TasksService>();
+    }
 }
