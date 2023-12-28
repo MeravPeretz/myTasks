@@ -1,23 +1,34 @@
 using Task = myTasks.Models.Task;
 using myTasks.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
+using System.Text.Json;
+using Microsoft.AspNetCore.Hosting;
 
 
 namespace myTasks.Services;
-
 public class TasksService: ITasksService
 {
     private  List<Task> tasks;
+    private string fileName = "tasks.json";
 
-    public TasksService()
+    public TasksService(IWebHostEnvironment webHost)
     {
-        tasks = new List<Task>
-        {
-            new Task { Id = 1, Name = "Java", Description = "to listen to lesson 14", IfDone=false,DateCreate=new DateTime(2023,12,19),DedlineInDays=5},
-            new Task { Id = 2, Name = "OOP", Description = "to learn to the test", IfDone=false,DateCreate=new DateTime(2023,12,19),DedlineInDays=30}
-        };
+        this.fileName = Path.Combine(webHost.ContentRootPath, "data", "tasks.json");
+
+            using (var jsonFile = File.OpenText(fileName))
+            {
+                tasks = JsonSerializer.Deserialize<List<Task>>(jsonFile.ReadToEnd(),
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            }
     }
 
+    private void saveToFile()
+    {
+        File.WriteAllText(fileName, JsonSerializer.Serialize(tasks));
+    }
     public  List<Task> GetAll(){return tasks;}
 
     public  Task GetById(int id) 
@@ -73,9 +84,7 @@ public class TasksService: ITasksService
         tasks.RemoveAt(index);
         return true;
     }  
-
-
-
+    public int Count => tasks.Count();
 }
 
 public static class TasksUtils

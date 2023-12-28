@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "67toqj+j4uowMlZpNYpAbWTMHcNLN5WNghwbOqJaK2U=",
+  "Hash": "pFhcGJjtJJPCr1P8/CYEwWOULLfZfmv0q/crzjGg7Oc=",
   "Source": "myTasks",
   "BasePath": "_content/myTasks",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "myTasks\\wwwroot",
+      "Source": "myTasks",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\",
+      "BasePath": "_content/myTasks",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\css\\site.css",
+      "SourceId": "myTasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\",
+      "BasePath": "_content/myTasks",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\data\\tasks.json",
+      "SourceId": "myTasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\",
+      "BasePath": "_content/myTasks",
+      "RelativePath": "data/tasks.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\tasks.json"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\index.html",
+      "SourceId": "myTasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\",
+      "BasePath": "_content/myTasks",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\js\\site.js",
+      "SourceId": "myTasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\",
+      "BasePath": "_content/myTasks",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
 }
