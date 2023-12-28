@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pFhcGJjtJJPCr1P8/CYEwWOULLfZfmv0q/crzjGg7Oc=",
+  "Hash": "Hmyo3eQhO1rV0PQxvd7j975tpAh46NY6Ks2oyVLe0vU=",
   "Source": "myTasks",
   "BasePath": "_content/myTasks",
   "Mode": "Default",
@@ -32,23 +32,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\data\\tasks.json",
-      "SourceId": "myTasks",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\",
-      "BasePath": "_content/myTasks",
-      "RelativePath": "data/tasks.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\data\\tasks.json"
     },
     {
       "Identity": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\wwwroot\\index.html",

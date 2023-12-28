@@ -1,4 +1,4 @@
-const uri = '/task';
+const uri = '/Tasks';
 let tasks = [];
 
 function getItems() {
@@ -84,7 +84,7 @@ function _displayCount(itemCount) {
 }
 
 function _displayItems(data) {
-    const tBody = document.getElementById('tasks');
+    const tBody = document.getElementById('Tasks');
     tBody.innerHTML = '';
 
     _displayCount(data.length);

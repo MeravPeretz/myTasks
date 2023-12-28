@@ -2,18 +2,18 @@ using Task = myTasks.Models.Task;
 using myTasks.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
-using Microsoft.AspNetCore.Hosting;
+
 
 
 namespace myTasks.Services;
 public class TasksService: ITasksService
 {
     private  List<Task> tasks;
-    private string fileName = "tasks.json";
+    private string fileName = "Tasks.json";
 
-    public TasksService(IWebHostEnvironment webHost)
+    public TasksService()
     {
-        this.fileName = Path.Combine(webHost.ContentRootPath, "data", "tasks.json");
+        this.fileName = Path.Combine( "Data", "tasks.json");
 
             using (var jsonFile = File.OpenText(fileName))
             {
@@ -39,16 +39,11 @@ public class TasksService: ITasksService
     public  int Add(Task newTask)
     {
         if (tasks.Count == 0)
-        {
             newTask.Id = 1;
-        }
         else
-        {
             newTask.Id =  tasks.Max(t => t.Id) + 1;
-        }
-
         tasks.Add(newTask);
-
+        saveToFile();
         return newTask.Id;
     }
   
@@ -66,7 +61,7 @@ public class TasksService: ITasksService
             return false;
 
         tasks[index] = newTask;
-
+        saveToFile();
         return true;
     }  
 
@@ -82,15 +77,9 @@ public class TasksService: ITasksService
             return false;
 
         tasks.RemoveAt(index);
+        saveToFile();
         return true;
     }  
     public int Count => tasks.Count();
 }
 
-public static class TasksUtils
-{
-    public static void AddTask(this IServiceCollection services)
-    {
-        services.AddSingleton<ITasksService, TasksService>();
-    }
-}

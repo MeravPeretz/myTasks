@@ -98,3 +98,4 @@ C:\Users\USER\Documents\core\2023-12-26\myTasks-1\obj\Debug\net7.0\refint\myTask
 C:\Users\USER\Documents\core\2023-12-26\myTasks-1\obj\Debug\net7.0\myTasks.pdb
 C:\Users\USER\Documents\core\2023-12-26\myTasks-1\obj\Debug\net7.0\myTasks.genruntimeconfig.cache
 C:\Users\USER\Documents\core\2023-12-26\myTasks-1\obj\Debug\net7.0\ref\myTasks.dll
+C:\Users\USER\Documents\core\2023-12-26\myTasks-1\bin\Debug\net7.0\data\tasks.json
