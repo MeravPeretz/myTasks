@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\myTasks.csproj": {}
+    "C:\\Users\\USER\\Desktop\\לימודים יד\\core\\2024-01-23\\myTasks\\myTasks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\myTasks.csproj": {
+    "C:\\Users\\USER\\Desktop\\לימודים יד\\core\\2024-01-23\\myTasks\\myTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\myTasks.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\לימודים יד\\core\\2024-01-23\\myTasks\\myTasks.csproj",
         "projectName": "myTasks",
-        "projectPath": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\myTasks.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\לימודים יד\\core\\2024-01-23\\myTasks\\myTasks.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\לימודים יד\\core\\2024-01-23\\myTasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -47,7 +47,7 @@ public class TasksController : ControllerBase
         }
         return NoContent();
     }
-    [HttpDelete]
+    [HttpDelete("{id}")]
         public ActionResult Delete(int id)
     {
         var result = TasksService.Delete(id);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SZi2654Vi+QqrZq5tKruVKFNaSvuj44G7au8NgrjweFo4YjrFE5yRatLi/0UmKeMhgN+IPVYRuNeq0UvOVTC6g==",
+  "dgSpecHash": "HZZVgoTRto1ije9yk0oIqE0iXNyfz4+wmMXTV8rQ5LaSImc/zACsZjeBU9kqKxjwt+RXBqkenSPd7hasn/hrBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Documents\\core\\2023-12-26\\myTasks-1\\myTasks.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\לימודים יד\\core\\2024-01-23\\myTasks\\myTasks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
