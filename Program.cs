@@ -1,6 +1,6 @@
 using myTasks.Services;
 using Utilities;
-
+using myTasks.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,13 +13,14 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseLogMiddleware();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
 
  app.UseDefaultFiles();
