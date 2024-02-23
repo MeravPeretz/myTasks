@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "Name": "shimmon",
+        "IsAdmin": false,
+        "Password":"shim123"
+    },
+    {
+        "Id": 1,
+        "Name": "levi",
+        "IsAdmin": true,
+        "Password":"l12345"
+    },
+    {
+        "Id": 1,
+        "Name": "rut",
+        "IsAdmin": false,
+        "Password":"cvb65"
+    },
+    {
+        "Id": 1,
+        "Name": "yael",
+        "IsAdmin": false,
+        "Password":"yael3"
+    }
+]
