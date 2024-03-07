@@ -1,26 +1,26 @@
 [
     {
-        "Id": 1,
-        "Name": "shimmon",
-        "IsAdmin": false,
-        "Password":"shim123"
-    },
-    {
-        "Id": 1,
+        "Id": 2,
         "Name": "levi",
-        "IsAdmin": true,
-        "Password":"l12345"
+        "Password": "l12345",
+        "UserType": 1
     },
     {
-        "Id": 1,
+        "Id": 3,
         "Name": "rut",
-        "IsAdmin": false,
-        "Password":"cvb65"
+        "Password": "cvb65",
+        "UserType": 0
     },
     {
-        "Id": 1,
+        "Id": 4,
         "Name": "yael",
-        "IsAdmin": false,
-        "Password":"yael3"
+        "Password": "yael3",
+        "UserType": 1
+    },
+    {
+        "Id": 5,
+        "Name": "string",
+        "Password": "string",
+        "UserType": 0
     }
 ]

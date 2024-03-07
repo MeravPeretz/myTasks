@@ -1,45 +1,46 @@
 using Microsoft.AspNetCore.Mvc;
 using myTasks.Interfaces;
+using myTasks.Models;
 
-namespace myTasks.Controllers;
+namespace mytasks.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class TasksController : ControllerBase
+public class LoginController : ControllerBase
 {
-    ITasksService TasksService;
-    public TasksController(ITasksService TasksService)
+    ILoginService LoginService;
+    public LoginController(ILoginService LoginService)
     {
-        this.TasksService = TasksService;
+        this.LoginService = LoginService;
     }
     [HttpGet]
-    public ActionResult<List<Task>> Get()
+    public ActionResult<List<User>> Get()
     {
-        return TasksService.GetAll();
+        return LoginService.GetAll();
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Task> Get(int id)
+    public ActionResult<User> Get(int id)
     {
-        var Task = TasksService.GetById(id);
-        if (Task == null)
+        var User = LoginService.GetById(id);
+        if (User == null)
             return NotFound();
-        return Task;
+        return User;
     }
 
     [HttpPost]
-    public ActionResult Post(Task newTask)
+    public ActionResult Post(User newUser)
     {
-        var newId = TasksService.Add(newTask);
+        var newId = LoginService.Add(newUser);
 
         return CreatedAtAction("Post", 
-            new {id = newId}, TasksService.GetById(newId));
+            new {id = newId}, LoginService.GetById(newId));
     }
 
     [HttpPut("{id}")]
-    public ActionResult Put(int id,Task newTask)
+    public ActionResult Put(int id,User newUser)
     {
-        var result = TasksService.Update(id, newTask);
+        var result = LoginService.Update(id, newUser);
         if (!result)
         {
             return BadRequest();
@@ -49,7 +50,7 @@ public class TasksController : ControllerBase
     [HttpDelete("{id}")]
         public ActionResult Delete(int id)
     {
-        var result = TasksService.Delete(id);
+        var result = LoginService.Delete(id);
         if (!result)
         {
             return BadRequest();

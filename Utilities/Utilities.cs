@@ -8,6 +8,10 @@ namespace Utilities{
         {
             services.AddSingleton<ITasksService,TasksService>();
         }
+         public static void AddUser(this IServiceCollection services)
+        {
+            services.AddSingleton<ILoginService,LoginService>();
+        }
     }
     
 
