@@ -294,3 +294,46 @@ Z:\B\פרץ מירב\core\myTasks\obj\Debug\net7.0\refint\myTasks.dll
 Z:\B\פרץ מירב\core\myTasks\obj\Debug\net7.0\myTasks.pdb
 Z:\B\פרץ מירב\core\myTasks\obj\Debug\net7.0\myTasks.genruntimeconfig.cache
 Z:\B\פרץ מירב\core\myTasks\obj\Debug\net7.0\ref\myTasks.dll
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.AssemblyInfo.cs
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.dll
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\refint\myTasks.dll
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.pdb
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\appsettings.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Data\Tasks.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Data\Users.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\myTasks.staticwebassets.runtime.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\myTasks.exe
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\myTasks.deps.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\myTasks.runtimeconfig.json
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\myTasks.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\myTasks.pdb
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER\Desktop\myTasks\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets\msbuild.myTasks.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets\msbuild.build.myTasks.props
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.myTasks.props
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.myTasks.props
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\scopedcss\bundle\myTasks.styles.css
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.csproj.CopyComplete
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\myTasks.genruntimeconfig.cache
+C:\Users\USER\Desktop\myTasks\obj\Debug\net7.0\ref\myTasks.dll

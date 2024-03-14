@@ -5,12 +5,12 @@ using System.Text.Json;
 
 
 namespace myTasks.Services;
-public class LoginService: ILoginService
+public class UserService: IUserService
 {
     private  List<User> users;
     private string fileName = "Users.json";
 
-    public LoginService()
+    public UserService()
     {
         this.fileName = Path.Combine( "Data", "users.json");
 

@@ -10,7 +10,11 @@ namespace Utilities{
         }
          public static void AddUser(this IServiceCollection services)
         {
-            services.AddSingleton<ILoginService,LoginService>();
+            services.AddSingleton<IUserService,UserService>();
+        }
+        public static void AddToken(this IServiceCollection services)
+        {
+            services.AddSingleton<ITokenService,TokenService>();
         }
     }
     

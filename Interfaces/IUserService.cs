@@ -1,7 +1,7 @@
 using User = myTasks.Models.User;
 namespace myTasks.Interfaces;
 
-public interface ILoginService
+public interface IUserService
 {
     List<User> GetAll();
 
