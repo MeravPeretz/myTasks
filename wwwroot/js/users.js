@@ -7,7 +7,29 @@ var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + token);
 myHeaders.append("Content-Type", "application/json");
 
-const getUsers = (token) => {
+
+const authorizateUserPage=()=>{
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+    fetch(uri+"/Current", requestOptions)
+        .then(response => response.json())
+        .then(user => {
+            if(user.userType==0){
+                alert("you cant use this page!")
+                window.location.href="index.html";
+            }
+        })
+        .catch(error => 
+            {console.error('Unable to get User.', error);
+            window.location.href="index.html";
+        });
+
+}
+authorizateUserPage();
+const getUsers = () => {
     var requestOptions = {
         method: 'GET',
         headers: myHeaders,
@@ -21,7 +43,7 @@ const getUsers = (token) => {
         })
         .catch(error => console.error('Unable to get Users.', error));
 }
-getUsers(token);
+getUsers();
 
 const addUser = () => {
     const addNameTextbox = document.getElementById('add-name');
@@ -41,7 +63,7 @@ const addUser = () => {
         })
         //.then(response => response.json())
         .then(() => {
-            getUsers(token);
+            getUsers();
             addNameTextbox.value = '';
             addTypeCheckBox.checked=false;
             addPasswordTextbox.value='';
@@ -54,7 +76,7 @@ function deleteUser(id) {
             method: 'DELETE',
             headers: myHeaders
         })
-        .then(() => getUsers(token))
+        .then(() => getUsers())
         .catch(error => console.error('Unable to delete user.', error));
 }
 
@@ -86,7 +108,7 @@ function updateUser() {
             headers: myHeaders,
             body: JSON.stringify(user)
         })
-        .then(() => getUsers(token))
+        .then(() => getUsers())
         .catch(error => console.error('Unable to update user.', error));
 
     closeInput();

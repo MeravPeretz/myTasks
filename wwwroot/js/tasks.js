@@ -7,6 +7,28 @@ var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer " + token);
 myHeaders.append("Content-Type", "application/json");
 
+
+const authorizateUserPage=()=>{
+    linkToUsersPage=document.getElementById("linkToUsersPage");
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+    fetch(uri+"/Current", requestOptions)
+        .then(response => response.json())
+        .then(user => {
+            if(user.userType==0){
+                linkToUsersPage.display=false;
+            }
+        })
+        .catch(error => 
+            {console.error('Unable to get User.', error);
+            alert("you first have to login in order to enter this page");
+            window.location.href="login.html";
+        });
+}
+authorizateUserPage();
 const getItems = (token) => {
     var requestOptions = {
         method: 'GET',
