@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LftkYdSnSoJ6YCTxXqBhqM1bqUrkEKbzWcoiB8KYyeFi5FavI2niQ+EDrq/n6J3/J1PW+x6HI/eczRRr3XV/Fg==",
+  "dgSpecHash": "dxt+V0Jj37r1rvgqSXLE3O2hc4ygoym4NN8TlY8s3jTF7usm2eaAO8JjS8SsVhnMSB9lJXZUgW21e+LBqqfn2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\myTasks\\myTasks.csproj",
+  "projectFilePath": "D:\\myTasks\\myTasks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",

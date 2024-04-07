@@ -1,16 +1,32 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\USER\\Desktop\\myTasks\\wwwroot\\css\\site.css",
+      "Id": "D:\\myTasks\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\myTasks\\wwwroot\\index.html",
+      "Id": "D:\\myTasks\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\USER\\Desktop\\myTasks\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "D:\\myTasks\\wwwroot\\js\\index.login.js",
+      "PackagePath": "staticwebassets\\js\\index.login.js"
+    },
+    {
+      "Id": "D:\\myTasks\\wwwroot\\js\\tasks.js",
+      "PackagePath": "staticwebassets\\js\\tasks.js"
+    },
+    {
+      "Id": "D:\\myTasks\\wwwroot\\js\\users.js",
+      "PackagePath": "staticwebassets\\js\\users.js"
+    },
+    {
+      "Id": "D:\\myTasks\\wwwroot\\tasks.html",
+      "PackagePath": "staticwebassets\\tasks.html"
+    },
+    {
+      "Id": "D:\\myTasks\\wwwroot\\users.html",
+      "PackagePath": "staticwebassets\\users.html"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.myTasks.props",

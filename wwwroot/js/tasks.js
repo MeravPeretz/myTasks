@@ -1,42 +1,55 @@
 const uri = '/Tasks';
 let tasks = [];
+let token = localStorage.getItem("token");
+console.log(token);
+var myHeaders = new Headers();
+//myHeaders.append("Authorization", "Bearer " + JSON.parse(token));
+myHeaders.append("Authorization", "Bearer " + token);
+myHeaders.append("Content-Type", "application/json");
 
-function getItems() {
-    fetch(uri)
+const getItems = (token) => {
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+    fetch(uri, requestOptions)
         .then(response => response.json())
-        .then(data => _displayItems(data))
+        .then(data => {
+            _displayItems(data);
+            console.log("tasks:" + data);
+        })
         .catch(error => console.error('Unable to get items.', error));
 }
+getItems(token);
 
-function addItem() {
-    const adddescriptionTextbox = document.getElementById('add-description');
+const addItem = () => {
+    const addNameTextbox = document.getElementById('add-description');
 
     const item = {
         isDone: false,
-        description: adddescriptionTextbox.value.trim()
+        description: addNameTextbox.value.trim(),
     };
 
     fetch(uri, {
             method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
+            headers: myHeaders,
             body: JSON.stringify(item)
         })
         .then(response => response.json())
         .then(() => {
-            getItems();
-            adddescriptionTextbox.value = '';
+            getItems(token);
+            addNameTextbox.value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
 }
 
 function deleteItem(id) {
     fetch(`${uri}/${id}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: myHeaders
         })
-        .then(() => getItems())
+        .then(() => getItems(token))
         .catch(error => console.error('Unable to delete item.', error));
 }
 
@@ -54,18 +67,20 @@ function updateItem() {
     const item = {
         id: parseInt(itemId, 10),
         isDone: document.getElementById('edit-isDone').checked,
-        description: document.getElementById('edit-description').value.trim()
+        description: document.getElementById('edit-description').value.trim(),
+        ownerId: -1
     };
 
     fetch(`${uri}/${itemId}`, {
             method: 'PUT',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
+            // headers: {
+            //     'Accept': 'application/json',
+            //     'Content-Type': 'application/json'
+            // },
+            headers: myHeaders,
             body: JSON.stringify(item)
         })
-        .then(() => getItems())
+        .then(() => getItems(token))
         .catch(error => console.error('Unable to update item.', error));
 
     closeInput();

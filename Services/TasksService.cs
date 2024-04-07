@@ -29,7 +29,9 @@ public class TasksService: ITasksService
     {
         File.WriteAllText(fileName, JsonSerializer.Serialize(tasks));
     }
-    public  List<Task> GetAll(){return tasks;}
+    public  List<Task> GetAll(int user_id){
+        return new List<Task>(tasks.Where(t=>t.OwnerId==user_id));
+    }
 
     public  Task GetById(int id) 
     {
@@ -49,16 +51,26 @@ public class TasksService: ITasksService
   
     public  bool Update(int id, Task newTask)
     {
-        if (id != newTask.Id)
+        if (id != newTask.Id){
+            System.Console.WriteLine("id error");
             return false;
+
+        }
 
         var existingTask= GetById(id);
         if (existingTask== null )
+            {
+            System.Console.WriteLine("task not exist");
             return false;
+        }
 
         var index = tasks.IndexOf(existingTask);
         if (index == -1 )
+            {
+            System.Console.WriteLine("error");
             return false;
+
+        }
 
         tasks[index] = newTask;
         saveToFile();
@@ -72,14 +84,16 @@ public class TasksService: ITasksService
         if (existingTask== null )
             return false;
 
-        var index = tasks.IndexOf(existingTask);
-        if (index == -1 )
-            return false;
-
-        tasks.RemoveAt(index);
+        tasks.Remove(existingTask);
         saveToFile();
         return true;
     }  
     public int Count => tasks.Count();
+
+    public void DeleteByUserId(int id){
+
+        tasks=new List<Task>(tasks.Where(task=>task.OwnerId!=id));
+        saveToFile();
+    }
 }
 

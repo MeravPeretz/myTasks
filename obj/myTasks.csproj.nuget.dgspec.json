@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\myTasks\\myTasks.csproj": {}
+    "D:\\myTasks\\myTasks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\myTasks\\myTasks.csproj": {
+    "D:\\myTasks\\myTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\myTasks\\myTasks.csproj",
+        "projectUniqueName": "D:\\myTasks\\myTasks.csproj",
         "projectName": "myTasks",
-        "projectPath": "C:\\Users\\USER\\Desktop\\myTasks\\myTasks.csproj",
+        "projectPath": "D:\\myTasks\\myTasks.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\myTasks\\obj\\",
+        "outputPath": "D:\\myTasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

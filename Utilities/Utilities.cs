@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using myTasks.Interfaces;
 
-namespace Utilities{
+namespace myTasks.Utilities{
     using myTasks.Services;
     public static  class Utilities{
         public static void AddTask(this IServiceCollection services)
@@ -16,7 +16,12 @@ namespace Utilities{
         {
             services.AddSingleton<ITokenService,TokenService>();
         }
+        
+        public static void AddServices(this IServiceCollection services)
+        {
+            services.AddSingleton<ITokenService,TokenService>();
+            services.AddSingleton<IUserService,UserService>();
+            services.AddSingleton<ITasksService,TasksService>();
+        }
     }
-    
-
 }
